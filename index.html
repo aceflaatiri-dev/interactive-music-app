@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VibeTunes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>VibeTunes</h1>
+    <input type="text" id="searchInput" placeholder="Search music...">
+  </header>
+
+  <main id="player">
+    <img id="cover" src="" alt="Cover">
+    <h2 id="title">Song Title</h2>
+    <p id="artist">Artist Name</p>
+    <div class="controls">
+      <button id="playBtn">▶️</button>
+      <button id="pauseBtn">⏸️</button>
+      <button id="nextBtn">⏭️</button>
+    </div>
+    <input type="range" id="progressBar" value="0" max="100">
+  </main>
+
+  <section class="top-tracks">
+    <h3>Top Tracks</h3>
+    <div class="track-list" id="topTracks"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
